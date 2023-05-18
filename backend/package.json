@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Argayash1/express-mesto-gha.git"
+    "url": "git+https://github.com/MariaSizova/express-mesto-gha.git"
   },
-  "author": "Yakov Zilberman",
+  "author": "Mari Sizova",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Argayash1/express-mesto-gha/issues"
+    "url": "https://github.com/MariaSizova/express-mesto-gha/issues"
   },
-  "homepage": "https://github.com/Argayash1/express-mesto-gha#readme",
+  "homepage": "https://github.com/MariaSizova/express-mesto-gha#readme",
   "devDependencies": {
     "eslint": "^8.38.0",
     "eslint-config-airbnb-base": "^15.0.0",

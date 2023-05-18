@@ -15,7 +15,9 @@ class Api {
   }
 
   _request(endpoint, options) {
-    return fetch(`${this._baseUrl}${endpoint}`, options).then(this._checkResponse);
+    return fetch(`${this._baseUrl}${endpoint}`, options).then(
+      this._checkResponse
+    );
   }
 
   getUserInfo() {
@@ -86,11 +88,11 @@ class Api {
 
 // Создаём экземпляр класса Api
 const api = new Api({
-  baseUrl: "https://apii.mesto2023.students.nomoredomains.monster",
+  baseUrl: "https://api.web15.mesto2023.nomoredomains.monster",
   headers: {
     "Content-Type": "application/json",
   },
-  credentials: 'include', // теперь куки посылаются вместе с запросом
+  credentials: "include", // теперь куки посылаются вместе с запросом
 });
 
 export default api;

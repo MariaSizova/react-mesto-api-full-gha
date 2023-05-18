@@ -1,4 +1,4 @@
-export const BASE_URL = "https://apii.mesto2023.students.nomoredomains.monster";
+export const BASE_URL = "https://api.web15.mesto2023.nomoredomains.monster";
 
 export const checkResponse = (res) => {
   if (res.ok) {
@@ -25,7 +25,7 @@ export const register = (password, email) => {
 export const authorize = (password, email) => {
   return fetch(`${BASE_URL}/signin`, {
     method: "POST",
-    credentials: 'include', // теперь куки посылаются вместе с запросом
+    credentials: "include", // теперь куки посылаются вместе с запросом
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
@@ -39,21 +39,20 @@ export const authorize = (password, email) => {
 export const signout = () => {
   return fetch(`${BASE_URL}/signout`, {
     method: "GET",
-    credentials: 'include', // теперь куки посылаются вместе с запросом
+    credentials: "include", // теперь куки посылаются вместе с запросом
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
     },
-    })
-    .then((res) => {
+  }).then((res) => {
     return checkResponse(res);
-});
-}
+  });
+};
 
 export const getContent = () => {
   return fetch(`${BASE_URL}/users/me`, {
     method: "GET",
-    credentials: 'include', // теперь куки посылаются вместе с запросом
+    credentials: "include", // теперь куки посылаются вместе с запросом
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
