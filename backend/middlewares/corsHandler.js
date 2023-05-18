@@ -4,6 +4,8 @@ const allowedCors = [
   "http://web15.mesto2023.nomoredomains.monster",
   "https://localhost:3000",
   "http://localhost:3000",
+  "https://api.web15.mesto2023.nomoredomains.monster",
+  "http://api.web15.mesto2023.nomoredomains.monster",
 ];
 
 const corsHandler = (req, res, next) => {
